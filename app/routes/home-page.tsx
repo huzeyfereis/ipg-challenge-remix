@@ -9,7 +9,6 @@ import { redirect } from '@remix-run/node';
 
 export default function HomePage() {
   const data = useActionData();
-  console.log(data);
 
   return (
     <Box sx={{ width: '50%', margin: 'auto' }}>

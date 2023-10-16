@@ -1,7 +1,6 @@
 import { prisma } from './database.server';
 
 export async function addFavWeather(weatherData) {
-  console.log(weatherData, 'asdas');
   try {
     return await prisma.favoritedCity.create({
       data: {
