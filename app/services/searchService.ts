@@ -4,7 +4,6 @@ import axios from 'axios';
 interface ResultItem {
   cityName: string;
   description: string;
-  imageCode: string;
   imagePath: string;
   temperature: string;
   humidity: number;
@@ -21,7 +20,6 @@ export const getCurrentWeather = async (cityName: string) => {
       const structuredResponse: ResultItem = {
         cityName: location.name,
         description: current.condition.text,
-        imageCode: current.condition.code,
         imagePath: current.condition.icon,
         temperature: current.temp_c,
         humidity: current.humidity,

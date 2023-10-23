@@ -14,9 +14,8 @@ model FavoritedCity {
   id            String @id @default(auto()) @map("_id") @db.ObjectId
   cityName      String
   description   String
-  imageCode     Int
   imagePath     String
-  temperature   Int
-  humidity      Int
-  precipitation Int
+  temperature   Float
+  humidity      Float
+  precipitation Float
 }
